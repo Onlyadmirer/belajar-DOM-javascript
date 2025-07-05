@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus Galeri DOM</title>
+    <link rel="stylesheet" href="/latihan2/style.css">
+</head>
+<body>
+
+    <div id="gallery-container">
+        <div id="main-image-wrapper">
+            <img id="main-image" src="https://picsum.photos/id/1018/500/300" alt="Gambar utama">
+            <p id="image-caption">Pemandangan Gunung</p>
+        </div>
+        <div id="thumbnail-container">
+            <img class="thumbnail" src="https://picsum.photos/id/1018/80/60" 
+                 data-full-image="https://picsum.photos/id/1018/500/300" 
+                 data-caption="Pemandangan Gunung">
+
+            <img class="thumbnail" src="https://picsum.photos/id/1015/80/60" 
+                 data-full-image="https://picsum.photos/id/1015/500/300" 
+                 data-caption="Wanita dengan Payung">
+            
+            <img class="thumbnail" src="https://picsum.photos/id/1025/80/60"
+                 data-full-image="https://picsum.photos/id/1025/500/300" 
+                 data-caption="Anjing Welsh Corgi">
+                 
+            <img class="thumbnail" src="https://picsum.photos/id/10/80/60"
+                 data-full-image="https://picsum.photos/id/10/500/300" 
+                 data-caption="Hutan dan Sungai">
+        </div>
+    </div>
+
+    <script src="/latihan2/script.js"></script>
+
+</body>
+</html>
