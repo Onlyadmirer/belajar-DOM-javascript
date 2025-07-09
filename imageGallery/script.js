@@ -5,14 +5,13 @@ const thum = document.querySelector('.thumbnail');
 
 thum.addEventListener('click', function(e) {
   if ( e.target.classList.contains('img-small') ) {
-  const url = e.target.dataset.img;
   const pickCaption = e.target.dataset.caption;
 
   mainImg.classList.add('opacity-10');
   caption.classList.add('opacity-10');
 
   setTimeout(() => {
-    mainImg.src = url;
+    mainImg.src = e.target.src;
     caption.innerHTML = pickCaption
     
     mainImg.classList.remove('opacity-10');

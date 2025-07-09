@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 .img-util {
-  @apply w-1/4 overflow-hidden transition duration-300 ease-in-out rounded-md cursor-pointer md:w-1/4 opacity-80 hover:opacity-100 hover:scale-102 focus:scale-103 focus:ring-2 ring-cyan-300 focus:opacity-100;
+  @apply w-1/4 overflow-hidden transition duration-300 ease-in-out rounded-md cursor-pointer md:w-1/5 opacity-80 hover:opacity-100 hover:scale-102 focus:scale-103 focus:ring-2 ring-[#d9eff7] focus:opacity-100 shadow-md shadow-slate-500;
 }
