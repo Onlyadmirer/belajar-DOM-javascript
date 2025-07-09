@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus Validasi Form</title>
+  <link rel="stylesheet" href="/latihan3/style.css">
+</head>
+<body>
+
+    <form id="registration-form" novalidate>
+        <h2>Buat Akun</h2>
+        <div id="success-message">Registrasi Berhasil!</div>
+
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <small class="error-message">Username tidak boleh kosong.</small>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <small class="error-message">Format email tidak valid.</small>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <small class="error-message">Password minimal 8 karakter.</small>
+        </div>
+        <button type="submit">Daftar</button>
+    </form>
+
+    <script src="/latihan3/script.js"></script>
+
+</body>
+</html>
