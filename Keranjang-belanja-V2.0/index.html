@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus DOM - Keranjang Belanja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Toko Buah Segar</h1>
+        </header>
+
+        <main>
+            <section id="produk-list">
+                <h2>Pilihan Produk</h2>
+                <div class="produk-card" data-nama="Apel" data-harga="15000">
+                    <img src="https://placehold.co/200x150/f03e3e/ffffff?text=Apel" alt="Apel">
+                    <h3>Apel Merah</h3>
+                    <p class="harga">Rp 15.000</p>
+                    <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="produk-card" data-nama="Pisang" data-harga="12000">
+                    <img src="https://placehold.co/200x150/fcc419/ffffff?text=Pisang" alt="Pisang">
+                    <h3>Pisang Cavendish</h3>
+                    <p class="harga">Rp 12.000</p>
+                    <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+                </div>
+
+                <div class="produk-card" data-nama="Jeruk" data-harga="20000">
+                    <img src="https://placehold.co/200x150/f76707/ffffff?text=Jeruk" alt="Jeruk">
+                    <h3>Jeruk Sunkist</h3>
+                    <p class="harga">Rp 20.000</p>
+                    <button class="tambah-ke-keranjang">Tambah ke Keranjang</button>
+                </div>
+            </section>
+
+            <aside id="keranjang">
+                <h2>Keranjang Anda</h2>
+                <ul id="keranjang-item-list">
+                    </ul>
+                <p class="total">Total: Rp<span id="total-harga">0</span></p>
+            </aside>
+        </main>
+    </div>
+
+    <script src="/Keranjang-belanja-V2.0/script.js"></script> 
+</body>
+</html>

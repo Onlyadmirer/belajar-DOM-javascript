@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
+/* class untuk image-Gallery-V2.0 */
 .img-util {
   @apply w-1/4 overflow-hidden transition duration-300 ease-in-out rounded-md cursor-pointer md:w-1/5 opacity-80 hover:opacity-100 hover:scale-102 focus:scale-103 focus:ring-2 ring-[#d9eff7] focus:opacity-100 shadow-md shadow-slate-500;
+}
+
+/* class untuk FAQ-versi-tailwind */
+.button {
+  @apply flex justify-between w-full text-lg font-bold cursor-pointer text-slate-600 after:content-['+'] after:text-2xl after:transition after:duration-300;
+}
+
+.active-button {
+  @apply transition-all duration-300 after:origin-center after:-rotate-45 after:text-teal-500;
+}
+
+.answer {
+  @apply px-2 overflow-hidden transition-all duration-300 ease-in-out opacity-0 text-slate-700 max-h-0;
+}
+
+.active-p {
+  @apply opacity-100 max-h-[200px] py-4 transition-all duration-300 ease-in-out after:rotate-180 after:text-teal-500;
 }
